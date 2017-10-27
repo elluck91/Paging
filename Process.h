@@ -14,4 +14,5 @@ class Process {
             unsigned _size,
             unsigned _arrival_time,
             unsigned _duration);
+        Process create_process();
 };
