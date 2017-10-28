@@ -1,18 +1,16 @@
-#include <list>
-#include "Memory.h"
+#include <string>
+#include <random>
+using namespace std;
 
 class Process {
-    private:
+    public:
         string process_name;
         unsigned size;
-        unsigned arrival_time;
-        unsigned duration;
-        Memory local_space[4];
-    public:
-        Process(
-            string _name,
-            unsigned _size,
-            unsigned _arrival_time,
-            unsigned _duration);
-        Process create_process();
+        double arrival_time;
+        double duration;
+    //public:
+        Process();
+        Process(string name, unsigned s, double at, double d);
+        void print();
+        static Process create_process(int id);
 };
