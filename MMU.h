@@ -10,6 +10,7 @@ class MMU {
         list<Memory> free_memory;
         double time_stamp;
         string process_to_evict;
+        int algo;
     public:
         MMU();
         MMU(int page_table_size, int free_memory_size);

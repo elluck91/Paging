@@ -8,7 +8,7 @@ class Process {
         unsigned size;
         double arrival_time;
         double duration;
-    //public:
+    public:
         Process();
         Process(string name, unsigned s, double at, double d);
         void print();
