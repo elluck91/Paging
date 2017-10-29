@@ -18,6 +18,7 @@ MMU::MMU(int page_table_size, int free_memory_size) {
 void MMU::initialize_free_memory(int size) {
     for (int i = 0; i < size; i++) {
         Memory temp;
+        temp.set_address(i);
         free_memory.push_back(temp);
     }
 }
@@ -59,7 +60,7 @@ void MMU::allocate_space(Process _process, int address_count) {
     for (int i = 0; i < address_count; i++) {
         m = free_memory.front();
         m.set_process(_process);
-        temp_addr = to_string(_process.get_process_id()) + "" + to_string(m.get_address());
+        temp_addr = to_string(_process.get_process_id()) + "" + to_string(m.get_address() % 4);
         m.set_address(stoi(temp_addr));
         free_memory.pop_front();
         page_table[empty_page()] = m;

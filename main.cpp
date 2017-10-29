@@ -33,7 +33,8 @@ int main() {
         else
             break;
     }
-
+    
+    mmu.print_page_table();
     return 0;
 }
 
