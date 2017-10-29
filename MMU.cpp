@@ -11,7 +11,6 @@ MMU::MMU() {
 }
 
 MMU::MMU(int page_table_size, int free_memory_size) {
-    page_table[page_table_size] = {};
     initialize_free_memory(free_memory_size);
     time_stamp = 0.0;
 }
@@ -78,4 +77,8 @@ int MMU::empty_page() {
 
 int MMU::get_page_table_size() {
     return sizeof(page_table) / sizeof(Memory);
+}
+
+int MMU::get_free_memory_size() {
+    return free_memory.size();
 }

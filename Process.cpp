@@ -7,7 +7,7 @@
 
 #include "Process.h"
 
-Process::Process(int _id, unsigned _size, double _arrival_time, double _duration) {
+Process::Process(int _id, int _size, double _arrival_time, int _duration) {
     process_id = _id;
     size = _size;
     arrival_time = _arrival_time;
@@ -15,7 +15,7 @@ Process::Process(int _id, unsigned _size, double _arrival_time, double _duration
 }
 
 Process::Process() {
-    Process("", 0, 0, 0);
+    Process(0, 0, 0.0, 0);
 }
 
 Process Process::create_process(int id) {
@@ -41,10 +41,10 @@ void Process::print() {
 }
 
 void Process::set_process_id(int _id) {
-    process_id = _process_id;
+    process_id = _id;
 }
 
-int Process:get_process_id() {
+int Process::get_process_id() {
     return process_id;
 }
 
@@ -60,7 +60,7 @@ void Process::set_arrival_time(double _arrival_time) {
     arrival_time = _arrival_time;
 }
 
-double Process::get_arrival_rime() {
+double Process::get_arrival_time() {
     return arrival_time;
 }
 

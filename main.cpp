@@ -5,19 +5,18 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
-#include "Process.h"
-#include "Memory.h"
+#include "MMU.h"
 
 vector<Process> queue_generator(unsigned job_size);
 int compare(Process one, Process two);
 
 int main() {
+    const int page_table_size = 100;
+    const int free_memory_size = 100;
+
     // define variables
     unsigned job_size;
-    vector<Process> job_queue;
-    list<Memory> free_memory;
-    list<Memory> page_table;
+    vector<Process> jobs_queue;
     string user_input;
 
     // user input
@@ -25,11 +24,12 @@ int main() {
     getline(cin, user_input);
     istringstream(user_input) >> job_size;
 
-    job_queue = queue_generator(job_size);
+    jobs_queue = queue_generator(job_size);
 
+    MMU mmu(page_table_size, free_memory_size);
     for (auto &job : jobs_queue) {
-        if (free_memory != NULL)
-            MMU::allocate(job, 4);
+        if (mmu.get_free_memory_size() != 0)
+            mmu.allocate_space(job, 4);
         else
             break;
     }
@@ -53,5 +53,5 @@ vector<Process> queue_generator(unsigned job_size) {
 }
 
 int compare(Process one, Process two) {
-     return (one.arrival_time - two.arrival_time) < 0;
+     return (one.get_arrival_time() - two.get_arrival_time()) < 0;
 }
