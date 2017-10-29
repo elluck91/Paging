@@ -16,7 +16,7 @@ class MMU {
         void print_page_table();
         void allocate(string process_name, int address_count);
         void initialize_free_memory(int size);
-        int get_table_page_size();
+        int get_page_table_size();
         int evict();
         int empty_page();
 };
