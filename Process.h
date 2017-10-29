@@ -3,7 +3,7 @@
 using namespace std;
 
 class Process {
-    public:
+    private:
         string process_name;
         unsigned size;
         double arrival_time;

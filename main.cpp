@@ -9,7 +9,6 @@ using namespace std;
 #include "Process.h"
 #include "Memory.h"
 
-
 vector<Process> queue_generator(unsigned job_size);
 int compare(Process one, Process two);
 
@@ -28,7 +27,12 @@ int main() {
 
     job_queue = queue_generator(job_size);
 
-
+    for (auto &job : jobs_queue) {
+        if (free_memory != NULL)
+            MMU::allocate(job, 4);
+        else
+            break;
+    }
 
     return 0;
 }
