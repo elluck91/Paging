@@ -6,13 +6,12 @@
 #include <vector>
 #include <algorithm>
 #include <cassert>
-#include <mutex>
 using namespace std;
 #include "Process.h"
+
 vector<Process> queue_generator(unsigned job_size, double &_virtual_time);
 int compare(Process one, Process two);
 void pop_front(vector<Process> &vec);
-std::mutex mtx2;
 
 int main() {
     vector<std::thread> ts;
@@ -61,26 +60,25 @@ int main() {
         mmu.remove_me(jobs_queue[i].get_process_id());
         i++;
     }
-
-    cout << mmu.get_free_memory_size() << " THIS IS IT!" << endl;
 */
+
     //mmu.print_page_table();
     for(int n = 0; n < i; n++) {
+        cout << "PID" << n  << endl;
         ts.push_back(std::thread(&Process::run, jobs_queue[n], mmu));
         jobs_complete.push_back(jobs_queue[n]);
-        pop_front(jobs_queue);
-    }
-    
-    
+    } 
+   
+    for(int n = 0; n < i; n++)
+       pop_front(jobs_queue); 
+
     while (virtual_time < last_time) {
         if (mmu.get_free_memory_size() >= minimum_page_count && !jobs_queue.empty()) {
             cout << "MOTHERFUCKER!!!!" << endl;
             temp = jobs_queue.front();
             pop_front(jobs_queue);
-            mtx2.lock();
             mmu.allocate_space(temp.get_process_id(), 4);
             ts.push_back(std::thread(&Process::run, temp, mmu));
-            mtx2.unlock();
         }
 
         std::this_thread::sleep_for(timespan);

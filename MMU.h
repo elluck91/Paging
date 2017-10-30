@@ -1,6 +1,7 @@
 #include <list>
 #include <string>
 #include <iostream>
+#include <mutex>
 using namespace std;
 #include "Memory.h"
 class MMU {
@@ -28,4 +29,6 @@ class MMU {
         int remove_me(int process_id);
         int find_page(int virtual_address_num);
         int random_address();
+        int nonzeros_count_pg();
+        mutex& get_mutex();
 };

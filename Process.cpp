@@ -3,10 +3,8 @@ using namespace std;
 #include <chrono>
 #include <random>
 #include <iostream>
-#include <mutex>
 #include "Process.h"
 
-std::mutex mtx3;
 
 Process::Process(int _id, int _size, double _arrival_time, int _duration, double &_virtual_time) {
     process_id = _id;
@@ -36,11 +34,9 @@ Process Process::create_process(int id, double &_virtual_time) {
 }
 
 void Process::print() {
-    mtx3.lock();
     cout << "Process ID: " << process_id << " | size in MB: "
         << size << " | Arrival Time: " << arrival_time
         << " | Duration: " << duration << endl;
-    mtx3.unlock();
 }
 
 void Process::set_process_id(int _id) {
@@ -94,5 +90,5 @@ void Process::run(MMU mmu) {
         << " | Size Entered: 4 | Size Exited: " << exit_size
         << " | Service Duration: " << duration << endl;
 
-    mmu.print_page_table();
+//    mmu.print_page_table();
 }

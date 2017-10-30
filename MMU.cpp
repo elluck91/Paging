@@ -2,25 +2,21 @@
 #include <random>
 #include <mutex>
 #include "MMU.h"
-
 std::mutex mtx;
-using namespace std;
 
+using namespace std;
 MMU::MMU(int page_table_size, int free_memory_size) {
     initialize_free_memory(free_memory_size);
     time_stamp = 0.0;
 }
 
 void MMU::initialize_free_memory(int size) {
-    mtx.lock();
     for (int i = 0; i < size; i++) {
         Memory temp;
         temp.set_process_id(-1);
         temp.set_address(-1);
         free_memory.push_back(temp);
     }
-    cout << "SIZE OF MEMORY AFTER ALLOCATION: " << get_free_memory_size() << endl;
-    mtx.unlock();
 }
 
 void MMU::print_page_table() {
@@ -58,7 +54,6 @@ int MMU::evict() {
 void MMU::allocate_space(int _process_id, int address_count) {
     Memory m;
     string temp_addr;
-    mtx.lock();
     for (int i = 0; i < address_count; i++) {
         m = free_memory.front();
         m.set_process_id(_process_id);
@@ -67,8 +62,6 @@ void MMU::allocate_space(int _process_id, int address_count) {
         free_memory.pop_front();
         page_table[empty_page()] = m;
     }
-    mtx.unlock();
-    cout << "size of free memory: " << get_free_memory_size() << endl;    
 }
 
 int MMU::empty_page() {
@@ -82,17 +75,23 @@ int MMU::empty_page() {
 int MMU::get_page_table_size() {
     return sizeof(page_table) / sizeof(page_table[0]);
 }
-
+int MMU::nonzeros_count_pg() {
+    int count = 0;
+    for (int i = 0; i < get_page_table_size(); i++) {
+        if (page_table[i].get_process_id() != -1)
+            count++;
+    }
+    return count;
+} 
 int MMU::get_free_memory_size() {
     return free_memory.size();
 }
 
 void MMU::reference(int _process_id, int address) {
-
+    std::lock_guard<std::mutex> lock(mtx);
     virtual_address_str = to_string(_process_id) + "" + to_string(address);
     virtual_address_num = stoi(virtual_address_str);
     // Referenced address found in page table
-    mtx.lock();
     if(find_page(virtual_address_num) != -1) {
         cout << "PID:" <<_process_id << " referencing: "
             << address << " | IN-MEMORY\n";
@@ -111,7 +110,9 @@ void MMU::reference(int _process_id, int address) {
             free_memory.pop_front();
         }
         else {
+            // I know it's redundant but logically it makes sense
             empty_page_index = evict();
+            free_memory.push_back(page_table[empty_page_index]);
             temp_mem = free_memory.front();
             temp_mem.set_process_id(_process_id);
             temp_mem.set_address(virtual_address_num);
@@ -119,7 +120,6 @@ void MMU::reference(int _process_id, int address) {
             free_memory.pop_front();
         }
     }
-    mtx.unlock();
 }
 
 int MMU::find_page(int virtual_address_num) {
@@ -131,11 +131,12 @@ int MMU::find_page(int virtual_address_num) {
     return -1;
 }
 int MMU::remove_me(int process_id) {
-    mtx.lock();
+    std::lock_guard<std::mutex> lock(mtx);
+
+    cout << "Sum of memory before removal: " << (nonzeros_count_pg() + get_free_memory_size()) << endl;
     process_size = 0;
     for(int i = 0; i < get_page_table_size(); i++) {
         if(page_table[i].get_process_id() == process_id) {
-            cout << "MY INDEX: " << i << endl;
             page_table[i].set_address(-1);
             page_table[i].set_process_id(-1);
             Memory temp;
@@ -143,8 +144,8 @@ int MMU::remove_me(int process_id) {
             process_size++;
         }
     }
-    cout << "free Memory after removal: " << get_free_memory_size() << endl;
-    mtx.unlock();
+    cout << "Sum of memory after removal: " << (nonzeros_count_pg() + get_free_memory_size()) << endl;
+   
     return process_size;
 }
 
