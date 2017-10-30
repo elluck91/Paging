@@ -1,18 +1,14 @@
-#include <string>
-
-using namespace std;
-
-#include "Process.h"
-
 class Memory {
     private:
-        int address;
-        Process process;
+        int address = -1;
+        int process_id = -1;
     public:
         Memory();
-        Memory(int _address, Process _process);
+        Memory(int _address, int _process_id);
         int get_address();
         void set_address(int _address);
-        void set_process(Process _process);
-        Process get_process();
+        void set_process_id(int _proces_id);
+        int get_process_id();
 };
+
+
