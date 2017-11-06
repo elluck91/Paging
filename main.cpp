@@ -65,7 +65,7 @@ int main() {
     //mmu.print_page_table();
     for(int n = 0; n < i; n++) {
         cout << "PID" << n  << endl;
-        ts.push_back(std::thread(&Process::run, jobs_queue[n], mmu));
+        ts.push_back(std::thread(&Process::run, jobs_queue[n], ref(mmu)));
         jobs_complete.push_back(jobs_queue[n]);
     } 
    
@@ -78,7 +78,7 @@ int main() {
             temp = jobs_queue.front();
             pop_front(jobs_queue);
             mmu.allocate_space(temp.get_process_id(), 4);
-            ts.push_back(std::thread(&Process::run, temp, mmu));
+            ts.push_back(std::thread(&Process::run, temp, ref(mmu)));
         }
 
         std::this_thread::sleep_for(timespan);

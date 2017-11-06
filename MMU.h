@@ -2,10 +2,12 @@
 #include <string>
 #include <iostream>
 #include <mutex>
+#include <queue>
 using namespace std;
 #include "Memory.h"
 class MMU {
     private:
+		queue<int> page_queue;
         Memory page_table[100];
         list<Memory> free_memory;
         double time_stamp;

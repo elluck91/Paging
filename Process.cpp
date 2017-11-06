@@ -71,7 +71,7 @@ double Process::get_duration() {
     return duration;
 }
 
-void Process::run(MMU mmu) {
+void Process::run(MMU &mmu) {
     typedef chrono::system_clock clk;
     default_random_engine rand_engine(clk::now().time_since_epoch().count());
     std::chrono::milliseconds timespan(100);

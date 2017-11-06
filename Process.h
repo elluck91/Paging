@@ -20,6 +20,6 @@ class Process {
         double get_arrival_time();
         void set_duration(double _duration);
         double get_duration();
-        void run(MMU mmu);
+        void run(MMU &mmu);
         double get_virtual_time();
 };

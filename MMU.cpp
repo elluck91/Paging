@@ -32,6 +32,14 @@ int MMU::evict() {
     switch(algo) {
         // FIFO
         case 1:
+			if (!page_queue.empty())
+			{
+				int page_index = page_queue.front();
+				//cout << "This page with index " << page_index << "will be evicted." << endl;
+				page_queue.pop();
+				//cout << "Next page is " << page_queue.front() << endl;
+				return page_index;
+			}
             break;
         // LRU
         case 2:
@@ -60,7 +68,11 @@ void MMU::allocate_space(int _process_id, int address_count) {
         temp_addr = to_string(_process_id) + "" + to_string(address_count % 4);
         m.set_address(stoi(temp_addr));
         free_memory.pop_front();
-        page_table[empty_page()] = m;
+		int empty_index = empty_page();
+		//cout << "This page with index " << empty_index << " has just been assigned. (Allocated)" << endl;
+		page_table[empty_index] = m;
+		page_queue.push(empty_index);
+		//cout << "Has just added " << empty_index << " to page queue (Allocated)." << endl;
     }
 }
 
@@ -106,8 +118,12 @@ void MMU::reference(int _process_id, int address) {
             temp_mem = free_memory.front();
             temp_mem.set_process_id(_process_id);
             temp_mem.set_address(virtual_address_num);
-            page_table[empty_page()] = temp_mem;
-            free_memory.pop_front();
+			int empty_index = empty_page();
+			//cout << "This page with index " << empty_index << "has just been assigned." << endl;
+			page_table[empty_index] = temp_mem;
+			free_memory.pop_front();
+			// FIFO IMPLEMENTATION
+			page_queue.push(empty_index);
         }
         else {
             // I know it's redundant but logically it makes sense
