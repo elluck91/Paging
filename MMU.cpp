@@ -72,15 +72,21 @@ void MMU::allocate_space(int _process_id, int address_count) {
     for (int i = 0; i < address_count; i++) {
         m = free_memory.front();
         m.set_process_id(_process_id);
+	cout << "process id is" << to_string(_process_id) << endl;
         temp_addr = to_string(_process_id) + "" + to_string(address_count % 4);
         m.set_address(stoi(temp_addr));
         free_memory.pop_front();
 	// LRU_Cache
-	lru_cache.push_back(m);
+	if(algo == 2) {
+		lru_cache.push_back(m);
+	}
+	cout << "foiewjafiowj" << endl;
 	int empty_index = empty_page();
 	//cout << "This page with index " << empty_index << " has just been assigned. (Allocated)" << endl;
 	page_table[empty_index] = m;
-	page_queue.push(empty_index);
+	if(algo == 1) {
+		page_queue.push(empty_index);
+	}
 	//cout << "Has just added " << empty_index << " to page queue (Allocated)." << endl;
     }
 }
@@ -150,11 +156,16 @@ void MMU::reference(int _process_id, int address) {
 			page_table[empty_index] = temp_mem;
 			free_memory.pop_front();
 			// FIFO IMPLEMENTATION
-			page_queue.push(empty_index);
+			if(algo == 1) {
+				page_queue.push(empty_index);
+			}
 			// LRU
-			lru_cache.push_back(temp_mem);
+			if(algo == 2) {
+				lru_cache.push_back(temp_mem);
+			}
 	} else { // I know it's redundant but logically it makes sense
 		empty_page_index = evict();
+                cout << "Evicting index " << to_string(empty_page_index) << endl;
 		free_memory.push_back(page_table[empty_page_index]);
 		temp_mem = free_memory.front();
 		temp_mem.set_process_id(_process_id);
@@ -162,10 +173,13 @@ void MMU::reference(int _process_id, int address) {
 		page_table[empty_page_index] = temp_mem;
 		free_memory.pop_front();
 		// FIFO implementation
-		page_queue.push(empty_page_index);
-
+		if(algo == 1) {
+			page_queue.push(empty_page_index);
+		}
 	        // LRU
-	        lru_cache.push_back(temp_mem);
+	        if(algo == 2) {
+		        lru_cache.push_back(temp_mem);
+		}
         }
     }
 }
@@ -183,9 +197,13 @@ int MMU::find_page(int virtual_address_num) {
 int MMU::get_page_index(int virtual_address_num) {
     for(int i = 0; i < get_page_table_size(); i++) {
         if(page_table[i].get_address() == virtual_address_num) {
+            cout << "Returning page_index " << to_string(i) << endl;
+	    cout << "Page Table: " << endl;
+	    print_page_table();
             return i;
         }
     }
+    cout << "Could not find page index of " + to_string(virtual_address_num) << endl;
     return -1;
 }
 
@@ -219,13 +237,14 @@ int MMU::random_address() {
 
 // LRU eviction algorithm
 int MMU::lru_address() {
-   //  cout << "lru_cache is: " << endl;
-   //  std::deque<Memory>::iterator it = lru_cache.begin();
-   //  while(it != lru_cache.end()) {
-   //      cout << "PID: " + to_string(it->get_process_id()) + "ADDRESS: " + to_string(it->get_address()) << endl;
-   //      it++;
-   //  }
+    cout << "lru_cache is: " << endl;
+    std::deque<Memory>::iterator it = lru_cache.begin();
+    while(it != lru_cache.end()) {
+        cout << "PID: " + to_string(it->get_process_id()) + "ADDRESS: " + to_string(it->get_address()) << endl;
+        it++;
+    }
     Memory m = lru_cache.front();
+    cout << "SOmethign" << endl;
     lru_cache.pop_front();
     string virtual_address_string = to_string(m.get_process_id()) + "" + to_string(m.get_address());
     int virtual_address_number = stoi(virtual_address_string);
