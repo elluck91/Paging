@@ -35,9 +35,9 @@ int MMU::evict() {
 			if (!page_queue.empty())
 			{
 				int page_index = page_queue.front();
-				//cout << "This page with index " << page_index << "will be evicted." << endl;
+				// cout << "This page with index " << page_index << "will be evicted." << endl;
 				page_queue.pop();
-				//cout << "Next page is " << page_queue.front() << endl;
+				// cout << "Next page is " << page_queue.front() << endl;
 				return page_index;
 			}
             break;
@@ -134,6 +134,8 @@ void MMU::reference(int _process_id, int address) {
             temp_mem.set_address(virtual_address_num);
             page_table[empty_page_index] = temp_mem;
             free_memory.pop_front();
+            // FIFO implementation
+            page_queue.push(empty_page_index);
         }
     }
 }
