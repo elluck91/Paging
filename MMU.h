@@ -7,9 +7,10 @@ using namespace std;
 #include "Memory.h"
 class MMU {
     private:
-		queue<int> page_queue;
+	queue<int> page_queue;
         Memory page_table[100];
         list<Memory> free_memory;
+	deque<Memory> lru_cache;
         double time_stamp;
         string process_to_evict;
         int algo;
@@ -30,7 +31,10 @@ class MMU {
         void reference(int _process_id, int address);
         int remove_me(int process_id);
         int find_page(int virtual_address_num);
+        int get_page_index(int virtual_address_num);
         int random_address();
+	void set_algo(int algorithm);
+        int lru_address();
         int nonzeros_count_pg();
         mutex& get_mutex();
 };
