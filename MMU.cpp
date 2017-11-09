@@ -319,34 +319,32 @@ int MMU::least_frequently_used() {
 
 //MFU algorithm
 int MMU::most_frequently_used() {
-    string virt_addr_str = to_string(page_table[0].get_process_id()) + "" + to_string(page_table[0].get_address());
+    string virt_addr_str = to_string(page_table[0].get_address());
     int virt_addr_num = stoi(virt_addr_str);
-    int first_page_address = virt_addr_num; // Holds address of first element in page_table
-    int max_temp = page_use_frequency.at(first_page_address);
+    int max_temp = page_use_frequency.at(virt_addr_num);
     int mfu_virt_addr;
     int check_distinct_freq;
     int i, j;
     bool found = false;
     for(i = 1; i < get_page_table_size(); i++) {
-        virt_addr_str = to_string(page_table[i].get_process_id()) + "" + to_string(page_table[i].get_address());
+        virt_addr_str = to_string(page_table[i].get_address());
         virt_addr_num = stoi(virt_addr_str);
-        int current_page_address = virt_addr_num;
-        if(max_temp < page_use_frequency.at(current_page_address)) {
-            max_temp = page_use_frequency.at(current_page_address);
+        if(max_temp < page_use_frequency.at(virt_addr_num)) {
+            max_temp = page_use_frequency.at(virt_addr_num);
         }
         mfu_virt_addr = i;
     }
 
-    j = 0;
-    while (!found) {
-        virt_addr_str = to_string(page_table[j].get_process_id()) + "" + to_string(page_table[j].get_address());
-        virt_addr_num = stoi(virt_addr_str);
-        if (max_temp == page_use_frequency.at(virt_addr_num)) {
-            mfu_virt_addr = j;
-            found = true;
-        }
-        j++;
-    }
+   //  j = 0;
+   //  while (!found) {
+   //      virt_addr_str = to_string(page_table[j].get_process_id()) + "" + to_string(page_table[j].get_address());
+   //      virt_addr_num = stoi(virt_addr_str);
+   //      if (max_temp == page_use_frequency.at(virt_addr_num)) {
+   //          mfu_virt_addr = j;
+   //          found = true;
+   //      }
+   //      j++;
+   //  }
 
     return mfu_virt_addr;
     
