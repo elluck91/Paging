@@ -3,6 +3,7 @@
 #include <iostream>
 #include <mutex>
 #include <queue>
+#include <map>
 using namespace std;
 #include "Memory.h"
 class MMU {
@@ -19,6 +20,7 @@ class MMU {
         int empty_page_index;
         Memory temp_mem;
         int process_size;
+        map<int, int> page_use_frequency;
     public:
         MMU(int page_table_size, int free_memory_size);
         void print_page_table();
@@ -35,6 +37,8 @@ class MMU {
         int random_address();
 	void set_algo(int algorithm);
         int lru_address();
+        int least_frequently_used();
+        int most_frequently_used();
         int nonzeros_count_pg();
         mutex& get_mutex();
 };

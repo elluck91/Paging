@@ -1,0 +1,711 @@
+Enter number of jobs to create: Jobs_queue size: 25
+PID0
+PID1
+PID2
+PID:18 referencing: 8 | PAGING!
+PID3
+PID:11 referencing: 2 | PAGING!
+PID4
+PID:5 referencing: 10 | PAGING!
+PID5
+PID:7 referencing: 0 | IN-MEMORY
+PID6
+PID7
+PID8
+PID9
+PID10
+PID11
+PID12
+PID13
+PID14
+PID15
+PID16
+PID:1 referencing: 28 | PAGING!
+PID17
+PID:2 referencing: 2 | PAGING!
+PID:4 referencing: 2 | PAGING!
+PID18
+PID:21 referencing: 3 | PAGING!
+PID19
+PID20
+PID:0 referencing: 12 | PAGING!
+PID21
+PID:23 referencing: 4 | PAGING!
+PID22
+PID:12 referencing: 12 | PAGING!
+PID23
+PID:15 referencing: 0 | IN-MEMORY
+PID24
+PID:8 referencing: 2 | PAGING!
+PID:9 referencing: 16 | PAGING!
+PID:3 referencing: 0 | IN-MEMORY
+PID:14 referencing: 23 | PAGING!
+PID:17 referencing: 3 | PAGING!
+PID:24 referencing: 4 | PAGING!
+PID:6 referencing: 1 | PAGING!
+PID:16 referencing: 1 | PAGING!
+PID:20 referencing: 3 | PAGING!
+PID:10 referencing: 7 | PAGING!
+PID:22 referencing: 1 | PAGING!
+PID:13 referencing: 5 | PAGING!
+PID:19 referencing: 6 | PAGING!
+PID:18 referencing: 2 | PAGING!
+PID:11 referencing: 2 | IN-MEMORY
+PID:7 referencing: 3 | PAGING!
+PID:5 referencing: 9 | PAGING!
+PID:1 referencing: 19 | PAGING!
+PID:2 referencing: 9 | PAGING!
+PID:4 referencing: 3 | PAGING!
+PID:21 referencing: 16 | PAGING!
+PID:0 referencing: 9 | PAGING!
+PID:23 referencing: 13 | PAGING!
+PID:12 referencing: 13 | PAGING!
+PID:15 referencing: 2 | PAGING!
+PID:8 referencing: 4 | PAGING!
+PID:9 referencing: 5 | PAGING!
+PID:3 referencing: 10 | PAGING!
+PID:14 referencing: 9 | PAGING!
+PID:17 referencing: 3 | IN-MEMORY
+PID:24 referencing: 3 | PAGING!
+PID:6 referencing: 8 | PAGING!
+PID:16 referencing: 0 | IN-MEMORY
+PID:20 referencing: 3 | IN-MEMORY
+PID:10 referencing: 17 | PAGING!
+PID:22 referencing: 3 | PAGING!
+PID:13 referencing: 7 | PAGING!
+PID:19 referencing: 8 | PAGING!
+PID:18 referencing: 7 | PAGING!
+PID:11 referencing: 0 | PAGING!
+PID:7 referencing: 4 | PAGING!
+PID:5 referencing: 1 | PAGING!
+PID:1 referencing: 7 | PAGING!
+PID:2 referencing: 10 | PAGING!
+PID:4 referencing: 4 | PAGING!
+PID:21 referencing: 6 | PAGING!
+PID:0 referencing: 11 | PAGING!
+PID:23 referencing: 9 | PAGING!
+PID:12 referencing: 6 | PAGING!
+PID:15 referencing: 1 | PAGING!
+PID:8 referencing: 1 | PAGING!
+PID:9 referencing: 13 | PAGING!
+PID:3 referencing: 6 | PAGING!
+PID:14 referencing: 9 | IN-MEMORY
+PID:17 referencing: 1 | PAGING!
+PID:24 referencing: 9 | PAGING!
+PID:6 referencing: 11 | PAGING!
+PID:16 referencing: 4 | PAGING!
+PID:20 referencing: 4 | PAGING!
+PID:10 referencing: 7 | IN-MEMORY
+PID:22 referencing: 1 | IN-MEMORY
+PID:13 referencing: 7 | IN-MEMORY
+PID:19 referencing: 9 | PAGING!
+PID:18 referencing: 3 | PAGING!
+PID:11 referencing: 2 | PAGING!
+PID:7 referencing: 3 | IN-MEMORY
+PID:5 referencing: 6 | PAGING!
+PID:2 referencing: 15 | PAGING!
+PID:4 referencing: 0 | PAGING!
+PID:1 referencing: 6 | PAGING!
+PID:21 referencing: 10 | PAGING!
+PID:0 referencing: 1 | PAGING!
+PID:23 referencing: 4 | IN-MEMORY
+PID:12 referencing: 5 | PAGING!
+PID:15 referencing: 2 | IN-MEMORY
+PID:8 referencing: 1 | IN-MEMORY
+PID:9 referencing: 10 | PAGING!
+PID:3 referencing: 5 | PAGING!
+PID:14 referencing: 12 | PAGING!
+PID:17 referencing: 3 | PAGING!
+PID:24 referencing: 2 | PAGING!
+PID:6 referencing: 5 | PAGING!
+PID:16 referencing: 3 | PAGING!
+PID:20 referencing: 2 | PAGING!
+PID:10 referencing: 19 | PAGING!
+PID:22 referencing: 1 | PAGING!
+PID:13 referencing: 10 | PAGING!
+PID:19 referencing: 16 | PAGING!
+PID:18 referencing: 1 | PAGING!
+PID:11 referencing: 0 | IN-MEMORY
+PID:7 referencing: 4 | IN-MEMORY
+PID:5 referencing: 9 | IN-MEMORY
+PID:4 referencing: 3 | IN-MEMORY
+PID:1 referencing: 5 | PAGING!
+PID:2 referencing: 14 | PAGING!
+PID:0 referencing: 3 | PAGING!
+PID:21 referencing: 13 | PAGING!
+PID:23 referencing: 12 | PAGING!
+PID:12 referencing: 3 | PAGING!
+PID:15 referencing: 2 | PAGING!
+PID:9 referencing: 6 | PAGING!
+PID:8 referencing: 0 | PAGING!
+PID:3 referencing: 5 | IN-MEMORY
+PID:14 referencing: 13 | PAGING!
+PID:17 referencing: 10 | PAGING!
+PID:24 referencing: 2 | IN-MEMORY
+PID:16 referencing: 4 | IN-MEMORY
+PID:6 referencing: 10 | PAGING!
+PID:20 referencing: 3 | PAGING!
+PID:10 referencing: 25 | PAGING!
+PID:22 referencing: 2 | PAGING!
+PID:13 referencing: 13 | PAGING!
+PID:19 referencing: 13 | PAGING!
+PID:18 referencing: 4 | PAGING!
+PID:11 referencing: 2 | IN-MEMORY
+PID:7 referencing: 0 | PAGING!
+PID:5 referencing: 0 | PAGING!
+PID:4 referencing: 4 | IN-MEMORY
+PID:1 referencing: 12 | PAGING!
+PID:23 referencing: 0 | PAGING!
+PID:2 referencing: 2 | IN-MEMORY
+PID:21 referencing: 13 | IN-MEMORY
+PID:0 referencing: 1 | IN-MEMORY
+PID:12 referencing: 13 | IN-MEMORY
+PID:15 referencing: 4 | PAGING!
+PID:9 referencing: 13 | IN-MEMORY
+PID:3 referencing: 2 | PAGING!
+PID:8 referencing: 3 | PAGING!
+PID:14 referencing: 18 | PAGING!
+PID:17 referencing: 10 | IN-MEMORY
+PID:24 referencing: 5 | PAGING!
+PID:16 referencing: 7 | PAGING!
+PID:6 referencing: 12 | PAGING!
+PID:20 referencing: 10 | PAGING!
+PID:10 referencing: 28 | PAGING!
+PID:22 referencing: 2 | IN-MEMORY
+PID:13 referencing: 9 | PAGING!
+PID:19 referencing: 8 | IN-MEMORY
+PID:18 referencing: 2 | IN-MEMORY
+PID:11 referencing: 3 | PAGING!
+PID:5 referencing: 0 | IN-MEMORY
+PID:7 referencing: 2 | PAGING!
+PID:4 referencing: 0 | IN-MEMORY
+PID:1 referencing: 10 | PAGING!
+PID:21 referencing: 15 | PAGING!
+PID:0 referencing: 7 | PAGING!
+PID:23 referencing: 2 | PAGING!
+PID:2 referencing: 7 | PAGING!
+PID:12 referencing: 6 | IN-MEMORY
+PID:15 referencing: 2 | IN-MEMORY
+PID:9 referencing: 12 | PAGING!
+PID:8 referencing: 0 | IN-MEMORY
+PID:14 referencing: 25 | PAGING!
+PID:3 referencing: 4 | PAGING!
+PID:17 referencing: 0 | PAGING!
+PID:24 referencing: 4 | IN-MEMORY
+PID:16 referencing: 8 | PAGING!
+PID:6 referencing: 10 | IN-MEMORY
+PID:20 referencing: 6 | PAGING!
+PID:10 referencing: 3 | PAGING!
+PID:22 referencing: 1 | IN-MEMORY
+PID:13 referencing: 8 | PAGING!
+PID:19 referencing: 10 | PAGING!
+PID:11 referencing: 2 | IN-MEMORY
+PID:5 referencing: 6 | IN-MEMORY
+PID:7 referencing: 1 | PAGING!
+PID:18 referencing: 4 | IN-MEMORY
+PID:4 referencing: 0 | PAGING!
+PID:1 referencing: 8 | PAGING!
+PID:0 referencing: 5 | PAGING!
+PID:21 referencing: 1 | PAGING!
+PID:23 referencing: 0 | IN-MEMORY
+PID:2 referencing: 11 | IN-MEMORY
+PID:12 referencing: 14 | PAGING!
+PID:15 referencing: 0 | PAGING!
+PID:9 referencing: 15 | PAGING!
+PID:8 referencing: 1 | PAGING!
+PID:14 referencing: 6 | PAGING!
+PID:3 referencing: 9 | PAGING!
+PID:17 referencing: 4 | PAGING!
+PID:24 referencing: 4 | PAGING!
+PID:16 referencing: 3 | IN-MEMORY
+PID:6 referencing: 0 | PAGING!
+PID:20 referencing: 15 | PAGING!
+PID:10 referencing: 5 | PAGING!
+PID:22 referencing: 0 | PAGING!
+PID:13 referencing: 2 | PAGING!
+PID:19 referencing: 9 | IN-MEMORY
+PID:11 referencing: 0 | IN-MEMORY
+PID:5 referencing: 4 | PAGING!
+PID:7 referencing: 1 | IN-MEMORY
+PID:18 referencing: 0 | PAGING!
+PID:4 referencing: 4 | PAGING!
+PID:23 referencing: 2 | IN-MEMORY
+PID:1 referencing: 22 | PAGING!
+PID:0 referencing: 0 | PAGING!
+PID:12 referencing: 13 | PAGING!
+PID:2 referencing: 8 | PAGING!
+PID:15 referencing: 3 | PAGING!
+PID:21 referencing: 2 | PAGING!
+PID:9 referencing: 14 | PAGING!
+PID:8 referencing: 0 | PAGING!
+PID:14 referencing: 3 | PAGING!
+PID:3 referencing: 5 | PAGING!
+PID:17 referencing: 7 | PAGING!
+PID:24 referencing: 1 | PAGING!
+PID:16 referencing: 0 | PAGING!
+PID:6 referencing: 8 | IN-MEMORY
+PID:20 referencing: 3 | IN-MEMORY
+PID:10 referencing: 1 | PAGING!
+PID:22 referencing: 4 | PAGING!
+PID:13 referencing: 11 | PAGING!
+PID:19 referencing: 15 | PAGING!
+PID:11 referencing: 4 | PAGING!
+PID:7 referencing: 4 | PAGING!
+PID:5 referencing: 1 | IN-MEMORY
+PID:18 referencing: 7 | IN-MEMORY
+PID:4 referencing: 4 | IN-MEMORY
+PID:23 referencing: 5 | PAGING!
+PID:0 referencing: 16 | IN-MEMORY
+PID:1 referencing: 5 | IN-MEMORY
+PID:12 referencing: 6 | PAGING!
+PID:2 referencing: 14 | IN-MEMORY
+PID:15 referencing: 3 | IN-MEMORY
+PID:21 referencing: 2 | IN-MEMORY
+PID:9 referencing: 7 | PAGING!
+PID:14 referencing: 13 | IN-MEMORY
+PID:8 referencing: 4 | PAGING!
+PID:3 referencing: 9 | IN-MEMORY
+PID:17 referencing: 3 | IN-MEMORY
+PID:24 referencing: 8 | PAGING!
+PID:16 referencing: 5 | PAGING!
+PID:6 referencing: 5 | IN-MEMORY
+PID:20 referencing: 5 | PAGING!
+PID:10 referencing: 10 | PAGING!
+PID:22 referencing: 2 | PAGING!
+PID:13 referencing: 7 | PAGING!
+PID:19 referencing: 15 | IN-MEMORY
+PID:11 referencing: 0 | PAGING!
+PID:7 referencing: 0 | IN-MEMORY
+PID:5 referencing: 5 | PAGING!
+PID:18 referencing: 7 | IN-MEMORY
+PID:4 referencing: 2 | PAGING!
+PID:23 referencing: 12 | IN-MEMORY
+PID:0 referencing: 6 | PAGING!
+PID:1 referencing: 1 | IN-MEMORY
+PID:2 referencing: 10 | IN-MEMORY
+PID:12 referencing: 3 | IN-MEMORY
+PID:15 referencing: 1 | IN-MEMORY
+PID:21 referencing: 14 | PAGING!
+PID:9 referencing: 14 | IN-MEMORY
+PID:14 referencing: 13 | PAGING!
+PID:8 referencing: 4 | IN-MEMORY
+PID:3 referencing: 10 | PAGING!
+PID:17 referencing: 6 | PAGING!
+PID:24 referencing: 9 | IN-MEMORY
+PID:16 referencing: 3 | PAGING!
+PID:6 referencing: 13 | PAGING!
+PID:20 referencing: 11 | PAGING!
+PID:10 referencing: 28 | IN-MEMORY
+PID:22 referencing: 2 | IN-MEMORY
+PID:13 referencing: 7 | IN-MEMORY
+PID:19 referencing: 7 | PAGING!
+PID:11 referencing: 1 | PAGING!
+PID:5 referencing: 1 | IN-MEMORY
+PID:7 referencing: 3 | PAGING!
+PID:18 referencing: 10 | PAGING!
+PID:23 referencing: 7 | PAGING!
+PID:4 referencing: 3 | PAGING!
+PID:1 referencing: 21 | PAGING!
+PID:0 referencing: 4 | PAGING!
+PID:21 referencing: 10 | IN-MEMORY
+PID:15 referencing: 2 | PAGING!
+PID:12 referencing: 16 | PAGING!
+PID:2 referencing: 4 | PAGING!
+PID:9 referencing: 0 | PAGING!
+PID:14 referencing: 26 | PAGING!
+PID:8 referencing: 4 | PAGING!
+PID:3 referencing: 6 | PAGING!
+PID:17 referencing: 5 | PAGING!
+PID:24 referencing: 9 | PAGING!
+PID:16 referencing: 0 | IN-MEMORY
+PID:6 referencing: 4 | PAGING!
+PID:20 referencing: 14 | PAGING!
+PID:10 referencing: 12 | PAGING!
+PID:22 referencing: 2 | PAGING!
+PID:13 referencing: 16 | PAGING!
+PID:19 referencing: 6 | PAGING!
+PID:11 referencing: 0 | IN-MEMORY
+PID:7 referencing: 2 | IN-MEMORY
+PID:5 referencing: 7 | PAGING!
+PID:18 referencing: 2 | PAGING!
+PID:23 referencing: 16 | PAGING!
+PID:4 referencing: 1 | PAGING!
+PID:0 referencing: 15 | PAGING!
+PID:1 referencing: 19 | PAGING!
+PID:21 referencing: 0 | PAGING!
+PID:2 referencing: 11 | PAGING!
+PID:15 referencing: 4 | PAGING!
+PID:12 referencing: 10 | PAGING!
+PID:9 referencing: 10 | PAGING!
+PID:14 referencing: 26 | IN-MEMORY
+PID:8 referencing: 2 | PAGING!
+PID:3 referencing: 10 | IN-MEMORY
+PID:17 referencing: 4 | IN-MEMORY
+PID:24 referencing: 4 | IN-MEMORY
+PID:16 referencing: 8 | IN-MEMORY
+PID:6 referencing: 0 | IN-MEMORY
+PID:20 referencing: 6 | IN-MEMORY
+PID:10 referencing: 27 | PAGING!
+PID:22 referencing: 3 | PAGING!
+PID:13 referencing: 4 | PAGING!
+PID:19 referencing: 1 | PAGING!
+PID:11 referencing: 0 | PAGING!
+PID:7 referencing: 1 | PAGING!
+PID:5 referencing: 8 | PAGING!
+PID:18 referencing: 0 | IN-MEMORY
+PID:23 referencing: 0 | PAGING!
+PID:4 referencing: 3 | IN-MEMORY
+PID:0 referencing: 15 | IN-MEMORY
+PID:21 referencing: 14 | IN-MEMORY
+PID:1 referencing: 8 | IN-MEMORY
+PID:2 referencing: 6 | PAGING!
+PID:12 referencing: 9 | PAGING!
+PID:15 referencing: 0 | IN-MEMORY
+PID:9 referencing: 6 | PAGING!
+PID:8 referencing: 3 | PAGING!
+PID:14 referencing: 17 | PAGING!
+PID:3 referencing: 10 | PAGING!
+PID:17 referencing: 2 | PAGING!
+PID:24 referencing: 3 | PAGING!
+PID:16 referencing: 5 | IN-MEMORY
+PID:6 referencing: 12 | PAGING!
+PID:20 referencing: 8 | PAGING!
+PID:10 referencing: 11 | PAGING!
+PID:22 referencing: 0 | IN-MEMORY
+PID:13 referencing: 14 | PAGING!
+PID:19 referencing: 1 | IN-MEMORY
+PID:11 referencing: 1 | IN-MEMORY
+PID:7 referencing: 4 | IN-MEMORY
+PID:5 referencing: 3 | PAGING!
+PID:18 referencing: 1 | PAGING!
+PID:23 referencing: 10 | PAGING!
+PID:1 referencing: 25 | PAGING!
+PID:4 referencing: 1 | IN-MEMORY
+PID:0 referencing: 2 | PAGING!
+PID:21 referencing: 4 | PAGING!
+PID:2 referencing: 11 | IN-MEMORY
+PID:12 referencing: 16 | IN-MEMORY
+PID:15 referencing: 4 | IN-MEMORY
+PID:9 referencing: 9 | PAGING!
+PID:8 referencing: 3 | IN-MEMORY
+PID:14 referencing: 14 | PAGING!
+PID:3 referencing: 9 | PAGING!
+PID:17 referencing: 3 | PAGING!
+PID:24 referencing: 6 | PAGING!
+PID:16 referencing: 10 | PAGING!
+PID:6 referencing: 12 | IN-MEMORY
+PID:20 referencing: 7 | PAGING!
+PID:10 referencing: 6 | PAGING!
+PID:22 referencing: 4 | IN-MEMORY
+PID:13 referencing: 7 | PAGING!
+PID:19 referencing: 1 | PAGING!
+PID:7 referencing: 2 | PAGING!
+PID:11 referencing: 0 | IN-MEMORY
+PID:5 referencing: 1 | PAGING!
+PID:18 referencing: 9 | PAGING!
+PID:23 referencing: 6 | PAGING!
+PID:4 referencing: 1 | PAGING!
+PID:2 referencing: 12 | PAGING!
+PID:21 referencing: 11 | PAGING!
+PID:0 referencing: 8 | PAGING!
+PID:1 referencing: 22 | IN-MEMORY
+PID:12 referencing: 15 | PAGING!
+PID:15 referencing: 1 | PAGING!
+PID:9 referencing: 9 | IN-MEMORY
+PID:8 referencing: 3 | PAGING!
+PID:14 referencing: 18 | PAGING!
+PID:3 referencing: 1 | PAGING!
+PID:17 referencing: 6 | IN-MEMORY
+PID:24 referencing: 7 | PAGING!
+PID:10 referencing: 6 | IN-MEMORY
+PID:6 referencing: 3 | PAGING!
+PID:20 referencing: 12 | PAGING!
+PID:16 referencing: 0 | PAGING!
+PID:22 referencing: 3 | IN-MEMORY
+PID:13 referencing: 1 | PAGING!
+PID:19 referencing: 3 | PAGING!
+PID:11 referencing: 4 | IN-MEMORY
+PID:7 referencing: 1 | IN-MEMORY
+PID:5 referencing: 0 | PAGING!
+PID:18 referencing: 5 | PAGING!
+PID:23 referencing: 14 | PAGING!
+PID:4 referencing: 3 | PAGING!
+PID:2 referencing: 16 | PAGING!
+PID:21 referencing: 1 | PAGING!
+PID:0 referencing: 13 | PAGING!
+PID:1 referencing: 13 | PAGING!
+PID:12 referencing: 0 | PAGING!
+PID:15 referencing: 1 | IN-MEMORY
+PID:9 referencing: 4 | PAGING!
+PID:8 referencing: 2 | IN-MEMORY
+PID:14 referencing: 19 | PAGING!
+PID:3 referencing: 6 | IN-MEMORY
+PID:17 referencing: 4 | PAGING!
+PID:24 referencing: 10 | PAGING!
+PID:10 referencing: 14 | PAGING!
+PID:6 referencing: 13 | IN-MEMORY
+PID:20 referencing: 15 | PAGING!
+PID:16 referencing: 3 | IN-MEMORY
+PID:22 referencing: 4 | PAGING!
+PID:13 referencing: 11 | IN-MEMORY
+PID:19 referencing: 1 | IN-MEMORY
+PID:11 referencing: 3 | IN-MEMORY
+PID:7 referencing: 1 | PAGING!
+PID:5 referencing: 1 | IN-MEMORY
+PID:18 referencing: 7 | PAGING!
+PID:23 referencing: 16 | IN-MEMORY
+PID:2 referencing: 12 | IN-MEMORY
+PID:4 referencing: 1 | IN-MEMORY
+PID:21 referencing: 10 | PAGING!
+PID:0 referencing: 1 | PAGING!
+PID:1 referencing: 9 | PAGING!
+PID:12 referencing: 10 | IN-MEMORY
+PID:15 referencing: 3 | PAGING!
+PID:9 referencing: 12 | PAGING!
+PID:8 referencing: 3 | IN-MEMORY
+PID:14 referencing: 27 | PAGING!
+PID:3 referencing: 8 | PAGING!
+PID:17 referencing: 6 | PAGING!
+PID:24 referencing: 7 | IN-MEMORY
+PID:10 referencing: 16 | PAGING!
+PID:20 referencing: 15 | IN-MEMORY
+PID:6 referencing: 7 | PAGING!
+PID:16 referencing: 0 | IN-MEMORY
+PID:22 referencing: 4 | IN-MEMORY
+PID:13 referencing: 1 | IN-MEMORY
+PID:19 referencing: 0 | PAGING!
+PID:7 referencing: 3 | IN-MEMORY
+PID:11 referencing: 1 | PAGING!
+PID:5 referencing: 10 | PAGING!
+PID:18 referencing: 4 | PAGING!
+PID:23 referencing: 5 | IN-MEMORY
+PID:2 referencing: 15 | PAGING!
+PID:4 referencing: 1 | PAGING!
+PID:21 referencing: 15 | PAGING!
+PID:0 referencing: 14 | PAGING!
+PID:1 referencing: 18 | PAGING!
+PID:12 referencing: 13 | PAGING!
+PID:15 referencing: 1 | PAGING!
+PID:9 referencing: 10 | IN-MEMORY
+PID:8 referencing: 1 | PAGING!
+PID:14 referencing: 12 | PAGING!
+PID:3 referencing: 0 | PAGING!
+PID:17 referencing: 10 | PAGING!
+PID:24 referencing: 1 | PAGING!
+PID:10 referencing: 27 | IN-MEMORY
+PID:20 referencing: 2 | PAGING!
+PID:6 referencing: 7 | IN-MEMORY
+PID:16 referencing: 3 | PAGING!
+PID:22 referencing: 4 | PAGING!
+PID:13 referencing: 4 | IN-MEMORY
+PID:19 referencing: 12 | PAGING!
+PID:11 referencing: 0 | PAGING!
+PID:7 referencing: 2 | IN-MEMORY
+PID:5 referencing: 9 | PAGING!
+PID:18 referencing: 2 | IN-MEMORY
+PID:23 referencing: 13 | PAGING!
+PID:0 referencing: 10 | PAGING!
+PID:2 referencing: 10 | IN-MEMORY
+PID:4 referencing: 1 | IN-MEMORY
+PID:21 referencing: 0 | IN-MEMORY
+PID:1 referencing: 28 | PAGING!
+PID:12 referencing: 14 | PAGING!
+PID:15 referencing: 0 | PAGING!
+PID:9 referencing: 4 | IN-MEMORY
+PID:8 referencing: 2 | PAGING!
+PID:14 referencing: 14 | IN-MEMORY
+PID:3 referencing: 1 | IN-MEMORY
+PID:17 referencing: 6 | IN-MEMORY
+PID:24 referencing: 9 | IN-MEMORY
+PID:10 referencing: 7 | PAGING!
+PID:20 referencing: 3 | PAGING!
+PID:6 referencing: 2 | PAGING!
+PID:16 referencing: 4 | PAGING!
+PID:22 referencing: 3 | PAGING!
+PID:13 referencing: 3 | PAGING!
+PID:19 referencing: 11 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 1.9sec. | PID: 11 | Size Entered: 4 | Size Exited: 2 | Service Duration: 2
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 1.9sec. | PID: 7 | Size Entered: 4 | Size Exited: 1 | Service Duration: 2
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 1.9sec. | PID: 5 | Size Entered: 4 | Size Exited: 6 | Service Duration: 2
+PID:18 referencing: 7 | IN-MEMORY
+PID:23 referencing: 12 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: Sum of memory before removal: 100
+1.9sec. | PID: 0 | Size Entered: 4 | Size Exited: Sum of memory after removal: 6100
+ | Service Duration: 2Time: 
+Sum of memory before removal: 100
+1.9sec. | PID: 4 | Size Entered: 4 | Size Exited: 1 | Service Duration: 2
+Sum of memory after removal: 100
+Time: 1.9sec. | PID: 2 | Size Entered: 4 | Size Exited: 3 | Service Duration: 2
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 1.9sec. | PID: 12 | Size Entered: 4 | Size Exited: 5 | Service Duration: 2
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 1 | Size Entered: 4 | Size Exited: 5 | Service Duration: 2
+PID:15 referencing: 3 | IN-MEMORY
+PID:21 referencing: 6 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 9 | Size Entered: 4 | Size Exited: 3 | Service Duration: 2
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 8 | Size Entered: 4 | Size Exited: 3 | Service Duration: 2
+PID:14 referencing: 9 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 3 | Size Entered: 4 | Size Exited: 4 | Service Duration: 2
+PID:17 referencing: 4 | IN-MEMORY
+PID:24 referencing: 4 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 10 | Size Entered: 4 | Size Exited: 5 | Service Duration: 2
+PID:20 referencing: 8 | IN-MEMORY
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 6 | Size Entered: 4 | Size Exited: 3 | Service Duration: 2
+PID:16 referencing: 8 | PAGING!
+PID:22 referencing: 1 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2sec. | PID: 13 | Size Entered: 4 | Size Exited: 4 | Service Duration: 2
+PID:19 referencing: 14 | PAGING!
+PID:18 referencing: 3 | PAGING!
+PID:23 referencing: 5 | PAGING!
+PID:15 referencing: 1 | IN-MEMORY
+PID:21 referencing: 2 | PAGING!
+PID:14 referencing: 13 | PAGING!
+PID:17 referencing: 9 | PAGING!
+PID:24 referencing: 1 | IN-MEMORY
+PID:20 referencing: 3 | IN-MEMORY
+PID:16 referencing: 4 | IN-MEMORY
+PID:22 referencing: 0 | PAGING!
+PID:19 referencing: 4 | PAGING!
+PID:18 referencing: 1 | IN-MEMORY
+PID:23 referencing: 15 | PAGING!
+PID:15 referencing: 4 | PAGING!
+PID:21 referencing: 12 | PAGING!
+PID:14 referencing: 4 | PAGING!
+PID:17 referencing: 5 | IN-MEMORY
+PID:24 referencing: 3 | IN-MEMORY
+PID:20 referencing: 12 | IN-MEMORY
+PID:16 referencing: 3 | IN-MEMORY
+PID:22 referencing: 4 | IN-MEMORY
+PID:19 referencing: 16 | PAGING!
+PID:18 referencing: 10 | PAGING!
+PID:23 referencing: 5 | IN-MEMORY
+PID:15 referencing: 0 | IN-MEMORY
+PID:21 referencing: 6 | IN-MEMORY
+PID:14 referencing: 14 | PAGING!
+PID:17 referencing: 2 | IN-MEMORY
+PID:24 referencing: 4 | IN-MEMORY
+PID:20 referencing: 4 | PAGING!
+PID:16 referencing: 10 | IN-MEMORY
+PID:22 referencing: 3 | IN-MEMORY
+PID:19 referencing: 8 | PAGING!
+PID:18 referencing: 0 | PAGING!
+PID:23 referencing: 6 | IN-MEMORY
+PID:15 referencing: 1 | IN-MEMORY
+PID:21 referencing: 16 | PAGING!
+PID:14 referencing: 30 | PAGING!
+PID:17 referencing: 7 | PAGING!
+PID:24 referencing: 6 | IN-MEMORY
+PID:20 referencing: 14 | IN-MEMORY
+PID:16 referencing: 7 | PAGING!
+PID:22 referencing: 2 | IN-MEMORY
+PID:19 referencing: 12 | IN-MEMORY
+PID:18 referencing: 2 | PAGING!
+PID:23 referencing: 3 | PAGING!
+PID:15 referencing: 2 | PAGING!
+PID:14 referencing: 8 | PAGING!
+PID:21 referencing: 10 | IN-MEMORY
+PID:17 referencing: 3 | IN-MEMORY
+PID:24 referencing: 1 | IN-MEMORY
+PID:20 referencing: 14 | IN-MEMORY
+PID:16 referencing: 4 | IN-MEMORY
+PID:22 referencing: 0 | IN-MEMORY
+PID:19 referencing: 12 | IN-MEMORY
+PID:18 referencing: 3 | IN-MEMORY
+PID:23 referencing: 12 | IN-MEMORY
+PID:15 referencing: 0 | IN-MEMORY
+PID:14 referencing: 9 | IN-MEMORY
+PID:21 referencing: 6 | IN-MEMORY
+PID:17 referencing: 10 | IN-MEMORY
+PID:24 referencing: 6 | IN-MEMORY
+PID:20 referencing: 7 | IN-MEMORY
+PID:16 referencing: 4 | IN-MEMORY
+PID:22 referencing: 0 | IN-MEMORY
+PID:19 referencing: 13 | PAGING!
+PID:18 referencing: 3 | IN-MEMORY
+PID:23 referencing: 16 | PAGING!
+PID:14 referencing: 22 | PAGING!
+PID:21 referencing: 11 | IN-MEMORY
+PID:15 referencing: 2 | IN-MEMORY
+PID:24 referencing: 4 | IN-MEMORY
+PID:17 referencing: 0 | PAGING!
+PID:20 referencing: 8 | IN-MEMORY
+PID:16 referencing: 1 | PAGING!
+PID:22 referencing: 4 | IN-MEMORY
+PID:19 referencing: 13 | IN-MEMORY
+PID:18 referencing: 7 | IN-MEMORY
+PID:23 referencing: 13 | IN-MEMORY
+PID:14 referencing: 2 | PAGING!
+PID:21 referencing: 7 | PAGING!
+PID:15 referencing: 2 | IN-MEMORY
+PID:24 referencing: 0 | PAGING!
+PID:20 referencing: 15 | PAGING!
+PID:17 referencing: 3 | IN-MEMORY
+PID:16 referencing: 4 | IN-MEMORY
+PID:22 referencing: 3 | IN-MEMORY
+PID:19 referencing: 7 | PAGING!
+PID:18 referencing: 8 | PAGING!
+PID:23 referencing: 9 | PAGING!
+PID:14 referencing: 12 | IN-MEMORY
+PID:21 referencing: 3 | PAGING!
+PID:24 referencing: 6 | IN-MEMORY
+PID:17 referencing: 3 | IN-MEMORY
+PID:20 referencing: 4 | IN-MEMORY
+PID:15 referencing: 1 | IN-MEMORY
+PID:16 referencing: 9 | PAGING!
+PID:22 referencing: 2 | IN-MEMORY
+PID:19 referencing: 10 | PAGING!
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2.9sec. | PID: 18 | Size Entered: 4 | Size Exited: 10 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 2.9sec. | PID: 23 | Size Entered: 4 | Size Exited: 11 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 14 | Size Entered: 4 | Size Exited: 13 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 21 | Size Entered: 4 | Size Exited: 11 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 15 | Size Entered: 4 | Size Exited: 5 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 22 | Size Entered: 4 | Size Exited: 5 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 17 | Size Entered: 4 | Size Exited: 8 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 24 | Size Entered: 4 | Size Exited: 6 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 20 | Size Entered: 4 | Size Exited: 8 | Service Duration: 3Sum of memory before removal: 
+100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 16 | Size Entered: 4 | Size Exited: 7 | Service Duration: 3
+Sum of memory before removal: 100
+Sum of memory after removal: 100
+Time: 3sec. | PID: 19 | Size Entered: 4 | Size Exited: 12 | Service Duration: 3
