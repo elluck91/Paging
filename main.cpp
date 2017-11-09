@@ -75,7 +75,6 @@ int main() {
 
     while (virtual_time < last_time) {
         if (mmu.get_free_memory_size() >= minimum_page_count && !jobs_queue.empty()) {
-            cout << "MOTHERFUCKER!!!!" << endl;
             temp = jobs_queue.front();
             pop_front(jobs_queue);
             mmu.allocate_space(temp.get_process_id(), 4);

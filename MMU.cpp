@@ -278,9 +278,11 @@ int MMU::lru_address() {
 
 //LFU algorithm
 int MMU::least_frequently_used() {
-	for(std::map<int, int>::iterator it = page_use_frequency.begin(); it != page_use_frequency.end(); it++) {
-		cout << it->first << " => " << it->second << endl;
-	}
+// 	for(std::map<int, int>::iterator it = page_use_frequency.begin(); it != page_use_frequency.end(); it++) {
+// 		if(it->second != 0) {
+// 			cout << it->first << " => " << it->second  << " NUM " << k << endl;
+// 		}
+// 	}
 	string virt_addr_str = to_string(page_table[0].get_address());
 	int virt_addr_num = stoi(virt_addr_str);
 	int current_page_address = virt_addr_num; // Holds address of first element in page_table
@@ -289,12 +291,11 @@ int MMU::least_frequently_used() {
 	int check_mult_freq;
 	int i, j;
 	bool found = false;
-	cout << virt_addr_str << " IN LFU " << endl;
-	for(i = 1; i < page_use_frequency.size(); i++) {
+	for(i = 1; i < get_page_table_size(); i++) {
 		virt_addr_str = to_string(page_table[i].get_address());
-		cout << virt_addr_str << " IN LFU " << endl;
 		virt_addr_num = stoi(virt_addr_str);
 		current_page_address = virt_addr_num;
+		// cout << current_page_address << " => " << page_use_frequency.at(current_page_address) << endl;
 		if(min_temp > page_use_frequency.at(current_page_address)) {
 			min_temp = page_use_frequency.at(current_page_address);
 		}
