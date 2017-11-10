@@ -21,6 +21,8 @@ class MMU {
         Memory temp_mem;
         int process_size;
         map<int, int> page_use_frequency;
+        int hit_count = 0;
+        int successful_swap = 0;
     public:
         MMU(int page_table_size, int free_memory_size);
         void print_page_table();

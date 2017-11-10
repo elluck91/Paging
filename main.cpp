@@ -32,7 +32,7 @@ int main() {
     
     // initialize MMU
     MMU mmu(page_table_size, free_memory_size);
-    mmu.set_algo(4);
+    mmu.set_algo(5);
 
     // user input
     cout << "Enter number of jobs to create: ";

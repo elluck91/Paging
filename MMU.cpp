@@ -146,9 +146,12 @@ void MMU::reference(int _process_id, int address) {
         }
         //increment page access frequency
 	    //pair<int, double> pair_freq(page_use_frequency[virtual_address_num].first + 1, ;
-	if(algo == 3 || algo == 4) {
-	        page_use_frequency[virtual_address_num] += 1;
-	}
+	    if(algo == 3 || algo == 4) {
+	           page_use_frequency[virtual_address_num] += 1;
+	    }
+
+        hit_count += 1;
+        cout << "Hit count: " << hit_count << endl;
 
     }
     else {
@@ -188,14 +191,17 @@ void MMU::reference(int _process_id, int address) {
 		if(algo == 1) {
 			page_queue.push(empty_page_index);
 		}
-	        // LRU
-	        if(algo == 2) {
-		        lru_cache.push_back(temp_mem);
+	    // LRU
+	    if(algo == 2) {
+		    lru_cache.push_back(temp_mem);
 		}		
-		//LFU reset frequency
-		if(algo == 3 || algo == 4) {
-			page_use_frequency[virtual_address_num] = 0;
-		}
+		   //LFU reset frequency
+	       if(algo == 3 || algo == 4) {
+	    	  page_use_frequency[virtual_address_num] = 0;
+	       }
+
+           successful_swap += 1;
+           cout << "Successful swap count: " << successful_swap << endl;
         }
     }
 }
@@ -288,7 +294,6 @@ int MMU::least_frequently_used() {
 	int current_page_address = virt_addr_num; // Holds address of first element in page_table
 	int min_temp = page_use_frequency.at(current_page_address);
 	int lfu_virt_addr;
-	int check_mult_freq;
 	int i, j;
 	bool found = false;
 	for(i = 1; i < get_page_table_size(); i++) {
@@ -302,7 +307,7 @@ int MMU::least_frequently_used() {
 	    lfu_virt_addr = i;	 
 	}
 
-    j = 0;
+    //j = 0;
     // while (!found && j < page_use_frequency.size()) {
     //     virt_addr_str = to_string(page_table[j].get_process_id()) + "" + to_string(page_table[j].get_address());
     //     virt_addr_num = stoi(virt_addr_str);
@@ -323,8 +328,7 @@ int MMU::most_frequently_used() {
     int virt_addr_num = stoi(virt_addr_str);
     int max_temp = page_use_frequency.at(virt_addr_num);
     int mfu_virt_addr;
-    int check_distinct_freq;
-    int i, j;
+    int i;
     bool found = false;
     for(i = 1; i < get_page_table_size(); i++) {
         virt_addr_str = to_string(page_table[i].get_address());
